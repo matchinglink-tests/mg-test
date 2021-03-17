@@ -1,0 +1,35 @@
+.overviewTable {
+  display: inline-block;
+  margin: 2em;
+  vertical-align: top;
+  border-collapse: collapse;
+
+  td {
+    padding: 8px;
+    border: 2px solid lightgrey;
+  }
+
+  tbody {
+    tr {
+      &:hover{
+        cursor: pointer;
+        background-color: skyblue;
+        color: aliceblue;
+      }
+    }
+  }
+}
+
+.mortgageDetailTable {
+  td {
+    padding: 4px;
+  }
+}
+
+.mortgageDetailDiv {
+  padding: 1em;
+  display: inline-block;
+  background-color: white;
+  border: 1px solid grey;
+}
+

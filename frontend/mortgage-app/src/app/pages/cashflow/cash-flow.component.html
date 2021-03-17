@@ -1,0 +1,17 @@
+<div class="container">
+
+  <button type="button" (click)="navigateToOverview()">Back to list</button>
+
+  <h3>Cashflow for {{mortgageIdentifier}}</h3>
+  <table>
+    <tr>
+      <th>Payment date</th>
+      <th>Amount</th>
+    </tr>
+    <tr *ngFor="let payment of cashFlow">
+      <td>{{payment.paymentDate}}</td>
+      <td>{{payment.amount | currency:'EUR'}}</td>
+    </tr>
+  </table>
+
+</div>
